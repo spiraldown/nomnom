@@ -28,3 +28,18 @@ body {
   font-family: 'rubikbold', sans-serif;
   font-size: 26px;
 }
+.btn-primary {
+  color: #DF1200;
+  background-color: #2a2a2a;
+  border-color: #2a2a2a;
+}
+.btn-primary.disabled {
+  background-color: #404040;
+  border-color: #2a2a2a;
+}
+.btn-primary:hover {
+  background-color: #DF1200;
+}
+.btn.disabled {
+  opacity: 100;
+}

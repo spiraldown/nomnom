@@ -6,11 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Place.create(name:"Del Taco 1",address:"123 Arapahoe Rd, Centennial, CO 80015",description:"Best Chili Cheese Fries in Colorado!")
-# Place.create(name:"Rumbi\'s",740 W Telegraph St, St.George, UT 84780,The on Rumbi\'s on our way to California! Good Rice bowls!"
-# Place.create(name:"Rounter Table Pizza",1010 Riverside Dr, Chino, CA 91710,Amazing PIzza. Though really expensive."
-# Place.create(name:"Pizza Pirates",4256 Mountain Ave, Chino, CA 91710,Most amazing pizza. On par easily with Round table and costs far less!"
-# "In-N-Out,2394 Mountain Ave, Chino, CA 91710,Most amazing burgers! Awesome!"
+place=Place.create!(name:2,address:"123 Arapahoe Rd, Centennial, CO 80015",description:"Best Chili Cheese Fries in Colorado!")
+puts place.name
+place=Place.create(name:"Rumbi\'s",address:"740 W Telegraph St, St.George, UT 84780",description:"The on Rumbi\'s on our way to California! Good Rice bowls!")
+puts place.name
+place=Place.create(name:"Rounter Table Pizza",address:"1010 Riverside Dr, Chino, CA 91710",description:"Amazing PIzza. Though really expensive.")
+puts place.name
+place=Place.create(name:"Pizza Pirates",address:"4256 Mountain Ave, Chino, CA 91710",description:"Most amazing pizza. On par easily with Round table and costs far less!")
+puts place.name
+place=Place.create(name:"In-N-Out",address:"2394 Mountain Ave, Chino, CA 91710",description:"Most amazing burgers! Awesome!")
 # "Tommy's Burger's,9849 Mountain Ave, Chino, CA 91710,Incredible Chili Cheese Fries. Yum!"
 # "Yum Yum Donut's,1294 Riverside Drive, Chino, CA 91710,Great donuts. Nice Firtters"
 # "Little Ceaser's Pizza,93273 BBuckley, Aurora, CA 80015, Hot and ready! Tasty Deep Dish!"

@@ -70,6 +70,8 @@ gem 'simple_form'
 gem 'pagy'
 gem "font-awesome-rails"
 gem 'devise'
+gem "geocoder"
+gem "figaro"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'

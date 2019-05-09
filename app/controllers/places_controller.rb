@@ -1,6 +1,7 @@
 class PlacesController < ApplicationController
 before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
+# .reverse method works for active record queries and also for arrays
   def index
   @pagy, @places = pagy(Place.all)
   end

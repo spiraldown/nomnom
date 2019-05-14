@@ -95,14 +95,13 @@
        
 
 <h1 class="float-left">Comments</h1>
+<button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal1">
+  Add a comment
+</button>
 <div class="col-10 offset-1">
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal1">
-  Add a comment
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal2">
-  Add a photo
-</button>
+
 </div>
 
 <div class="clear"></div>
@@ -122,22 +121,21 @@
 <% end %>
 </div>
 
-
+<br /><br />
 <h1 class="float-left">Photos</h1>
+  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal2">
+  Add a photo
+</button>
 <br/><br/>
+
+
 
 <div class="clear"></div>
 
 <div class="row">
 <% @place.photos.each do |photo| %>
   <div class="col-12 col-sm-6">
-
       <%= image_tag photo.picture.url %>
-    <blockquote>
-      <%= photo.caption %>
-      <small><%= photo.user.email %></small>
-    </blockquote>
-
 
   </div>
 </div>

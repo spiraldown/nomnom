@@ -4,6 +4,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 # .reverse method works for active record queries and also for arrays
   def index
   @pagy, @places = pagy(Place.all)
+  @photo = Photo.all
   end
 
   def new
@@ -32,6 +33,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
       return render plain: 'Not Allowed', status: :forbidden
     end
   end
+
 
   def update
     @place = Place.find(params[:id])

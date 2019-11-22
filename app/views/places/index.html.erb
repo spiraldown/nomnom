@@ -51,7 +51,7 @@
 
   <div class="col-12 col-sm-6">
 <% if place.photos.present? %>
-      <%= image_tag place.photos.last.picture.url %>
+      <%= image_tag(place.photos.last.picture.url, class: "img-fluid") %>
     <blockquote>
       <%= place.photos.last.caption %>
       <small><%= place.photos.last.user.email %></small>

@@ -2,7 +2,7 @@
 
 A Full Stack App for users to create food reviews. Additional users can add to the created location to add their own review of the submitted location. Adding pictures and additional comments. 
 
-### You can visit [Flixter Here](https://nomster-matt-munos.herokuapp.com/)
+### You can visit [Nomster Here](https://nomster-matt-munos.herokuapp.com/)
 
 ### Index
 Index page when visiting. Navigation up top with links at bottom of app for refreshing of random quote and portfolio link
